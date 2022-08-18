@@ -56,7 +56,8 @@ def login():
 
                 return {
                     "message": "success",
-                    "user": user.name,
+                    "name": user.name,
+                    "full_name": user.full_name,
                     "api_key": user.api_key,
                     "api_secret": user.get_password("api_secret"),
                 }
